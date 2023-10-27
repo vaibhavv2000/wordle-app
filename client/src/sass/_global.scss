@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+$primary: rgb(34, 94, 157);
+
+$inter: "Inter", sans-serif;
+$roboto: "Roboto", sans-serif;
+$sans_pro: "Source Sans Pro", sans-serif;
+$sans: "Open Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $inter;
+}
+
+@mixin xs() {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media screen and (min-width: 460px) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media screen and (min-width: 1244px) {
+    @content;
+  }
+}

@@ -1,0 +1,110 @@
+@import "_global.scss";
+
+body {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(253, 253, 252);
+}
+
+.main {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+  .box-holder {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 500px;
+
+    .search-box {
+      background-color: #fff;
+
+      div {
+        padding: 5px 10px;
+        display: flex;
+        border: 1.5px solid #e1e0e0;
+        align-items: center;
+        border-radius: 5px;
+
+        i {
+          color: #999;
+        }
+
+        input {
+          font-family: $inter;
+          border: none;
+          color: #888;
+          flex: 1;
+          font-size: 17px;
+          outline: none;
+          padding: 10px;
+        }
+      }
+    }
+
+    .users {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background-color: #fff;
+      border: 1px solid #e8e7e7;
+      margin-top: 5px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5px;
+        cursor: pointer;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.02222);
+        }
+
+        .user-left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+          }
+
+          .user-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+              font-size: 18px;
+              font-family: $roboto;
+              color: #666;
+              font-weight: 500;
+              letter-spacing: 0.4px;
+            }
+
+            span {
+              font-size: 13px;
+              display: inline-block;
+              color: #999;
+              margin-top: -2px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .user-right {
+          span {
+            color: dodgerblue;
+            font-size: 15px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

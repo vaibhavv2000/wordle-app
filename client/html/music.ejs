@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="http://localhost:3000/css/music.css">
+    <link rel="stylesheet" href="http://localhost:3000/css/sidebar.css">
+    <script src="./js/bottomnav.js" defer></script>
+</head>
+
+<body>
+    <%- include('partials/bottomNav.ejs') %>
+    <div style="display: flex;">
+        <%- include('partials/sidebar.ejs') %>
+            <div class="main">
+                <div class="parent">
+                    <div class="music-holder">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbgu7z7AOBxzynpG7cnMYsFuvh0PuY_vxBhA&usqp=CAU"
+                                alt="" class="current-music-img" />
+                        </div>
+                        <div class="song-details">
+                            <h5 class="music-name"></h5>
+                            <p class="music-from"></p>
+                        </div>
+                        <div class="range-time" style="display: flex; align-items: center; gap: 8px; padding: 0 10px;">
+                            <span class="current-time song-times">0:00</span>
+                            <input type="range" name="" id="range" value="0" />
+                            <span class="total-time song-times">3:19</span>
+                        </div>
+                        <div class="player">
+                            <div class="play-opt">
+                                <i class="fa-solid fa-shuffle shuffle"></i>
+                                <i class="fa-solid fa-backward backward"></i>
+                                <i class="fa-solid fa-play" id="play"></i>
+                                <i class="fa-solid fa-forward forward"></i>
+                                <i class="fa-solid fa-repeat loop"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-list">
+                        <h1>Songs List</h1>
+                        <div class="all-songs"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="http://localhost:3000/js/music.js" defer></script>
+</body>
+
+</html>

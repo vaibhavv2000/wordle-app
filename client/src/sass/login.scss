@@ -1,0 +1,254 @@
+@import "_global.scss";
+
+body {
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  @include sm {
+    background-color: #fdfcfc;
+  }
+}
+
+.login {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  background-color: #fff;
+
+  @include sm {
+    box-shadow: 2px 2px 10px #dfdede;
+    width: 75vw;
+    height: max-content;
+  }
+
+  @include md {
+    width: 50vw;
+  }
+
+  @include lg {
+    width: 80vw;
+  }
+
+  div {
+    flex: 1;
+    height: 80vh;
+  }
+
+  #{&}-left {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include sm {
+        padding: 30px 0;
+      }
+
+      h1 {
+        color: rgb(59, 97, 202);
+        text-shadow: 2px 2px rgb(33, 76, 193);
+        font-weight: 400;
+        margin: 15px;
+        font-family: $inter;
+        font-size: 50px;
+      }
+
+      #warning {
+        font-size: 13px;
+        text-align: left;
+        width: 330px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 7px 0;
+        position: relative;
+
+        &.register-link {
+          display: flex !important;
+          gap: 10px;
+
+          p {
+            color: #888;
+            font-weight: 500;
+            font-family: $inter;
+            font-size: 17px;
+          }
+
+          a {
+            color: $primary;
+            display: inline-block;
+            padding: 6px 0;
+            text-decoration: none;
+
+            &:hover::after {
+              width: 100%;
+            }
+
+            &::after {
+              content: "";
+              border-bottom: 2px solid $primary;
+              width: 20px;
+              display: block;
+              height: 6px;
+              margin: 0 auto;
+              transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+          }
+        }
+
+        input {
+          padding: 22px 10px 10px 12px;
+          border: 1.5px solid #c4c2c2;
+          outline: none;
+          font-size: 16px;
+          background-color: transparent;
+          z-index: 9999;
+          border-radius: 4px;
+          width: 300px;
+
+          @include sm {
+            width: 330px;
+          }
+
+          @include md {
+            width: 330px;
+          }
+
+          &:focus {
+            border: 2px solid rgb(33, 76, 193);
+          }
+        }
+
+        .forgot-pwd {
+          text-align: right;
+          margin: 2px 0;
+
+          a {
+            color: rgb(33, 76, 193);
+            font-size: 15px;
+
+            &:hover {
+              color: rgb(214, 39, 39);
+            }
+          }
+        }
+
+        span {
+          position: absolute;
+          top: 14px;
+          transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          left: 10px;
+          font-size: 16px;
+          color: #655;
+        }
+
+        button {
+          background-image: linear-gradient(
+            to right,
+            rgb(62, 119, 211),
+            rgb(79, 52, 235)
+          );
+          border: none;
+          font-size: 17px;
+          outline: none;
+          padding: 13px;
+          border-radius: 5px;
+          color: #fff;
+          font-weight: 600;
+          cursor: pointer;
+          box-shadow: 1px 1px 2px #c4c1c1;
+          font-family: $sans;
+          width: 300px;
+
+          @include sm {
+            width: 330px;
+          }
+
+          @include md {
+            width: 330px;
+          }
+        }
+
+        .google-login {
+          color: #fff;
+          background-color: rgb(222, 35, 35);
+          padding: 13px 10px;
+          cursor: pointer;
+          border: 2px solid rgb(222, 35, 35);
+          text-transform: uppercase;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px #e5e4e4;
+          margin-top: -5px;
+          gap: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          width: 300px;
+
+          @include sm {
+            width: 330px;
+          }
+
+          @include md {
+            width: 330px;
+          }
+
+          &:hover {
+            background-color: #fff;
+            color: rgb(222, 35, 35);
+          }
+
+          p {
+            font-weight: 700;
+            font-family: $inter;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  #{&}-right {
+    display: none;
+    position: relative;
+
+    @include lg {
+      display: block;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(203, 58, 164, 0.2),
+        rgba(42, 90, 192, 0.3)
+      );
+      left: 0;
+    }
+  }
+}
+
+.label {
+  font-size: 12px !important;
+  color: rgb(33, 76, 193) !important;
+  top: 7px !important;
+  left: 11px !important;
+  z-index: 9999999;
+}

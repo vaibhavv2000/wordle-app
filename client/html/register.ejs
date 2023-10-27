@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src * gap:; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src *; img-src * data: blob: android-webview-video-poster:; style-src * 'unsafe-inline';">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/register.js" defer></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-left">
+            <form>
+                <h1>Register</h1>
+                <div>
+                    <input id="name" />
+                    <span>Name</span>
+                </div>
+                <div>
+                    <input id="username" />
+                    <span>Username</span>
+                </div>
+                <div>
+                    <input id="email">
+                    <span>Email</span>
+                </div>
+                <div>
+                    <input type="password" id="password" />
+                    <span>Password</span>
+                </div>
+                <div>
+                    <input type="password" id="confirm-password" />
+                    <span>Confirm Password</span>
+                </div>
+                <div class="otp">
+                    <input id="otp-in" />
+                    <span class="otp-label">OTP</span>
+                </div>
+                <p id="warning"></p>
+                <div>
+                    <button>Register</button>
+                </div>
+                <div class="register-link">
+                    <p>Already have an Account? <a href="/">Login</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="login-right">
+            <img src="./images/party.jpg" alt="">
+            <h1 class="login-right-title"></h1>
+            <div class="overlay"></div>
+            <div class="login-right-google">
+                <i class="fa-brands fa-google"></i>
+                <div class="google-overlay"></div>
+                <span>Sign up with Google</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

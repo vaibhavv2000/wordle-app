@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/settings.js" defer></script>
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <script src="./js/bottomnav.js" defer></script>
+</head>
+
+<body>
+  <%- include('partials/bottomNav.ejs') %>
+  <div style="display: flex;">
+    <%- include('partials/sidebar.ejs') %>
+    <div class="main">
+      <div class="settings">
+        <h1>Settings</h1>
+        <div class="account">
+          <span class="material-symbols-outlined">
+            person_add
+          </span>
+          <span>Account</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            notifications
+          </span>
+          <span>Notifications</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            lock
+          </span>
+          <span>Privacy</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            verified_user
+          </span>
+          <span>Security</span>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">
+            ads_click
+          </span>
+          <span>Ads</span>
+        </div>
+                    <div class="pwd">
+                        <span class="material-symbols-outlined">
+                            password
+                        </span>
+                        <span>Update Password</span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            info
+                        </span>
+                        <span>About</span>
+                    </div>
+
+                    <p id="divider"></p>
+
+                    <div class="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                        </span>
+                        <span>Logout</span>
+                    </div>
+                    <div class="delete-acc">
+                        <span class="material-symbols-outlined">
+                            person_remove
+                        </span>
+                        <span>Delete Account</span>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="del-acc">
+                    <div class="acc-del-warning">
+                        <p>
+                            Are you sure, you want to Delete your Account?
+                            <br /> <br />
+                            You will lose all your Data
+                        </p>
+                        <div class="acc-btns">
+                            <button class="del-cancel">Cancel</button>
+                            <button class="del-confirm">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

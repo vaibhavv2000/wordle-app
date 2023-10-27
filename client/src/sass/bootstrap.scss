@@ -1,0 +1,13 @@
+$primary: #7952b3;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 320px,
+  sm: 460px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

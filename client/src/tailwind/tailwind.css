@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply cursor-pointer lg:text-[15px] font-roboto lg:text-gray-700 lg:hover:text-primary text-white my-4 lg:my-0 lg:mt-1 text-xl hover:underline lg:hover:no-underline;
+}
+
+footer > ul > li {
+  @apply cursor-pointer hover:underline;
+}
+
+.nav-exp-link {
+  @apply px-3 py-1 text-[14px] text-white lg:text-gray-600 cursor-pointer lg:hover:bg-blue-50 hover:underline lg:hover:no-underline;
+}
+
+.nav-list {
+  @apply absolute left-[-22px] w-full top-[-100vh] bg-black lg:bg-transparent text-white lg:text-black lg:!static lg:!flex flex-col lg:flex-row items-center text-[13px] space-x-4 h-screen lg:h-[max-content] lg:w-[max-content] grid place-content-center;
+
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-show {
+  top: 0;
+}

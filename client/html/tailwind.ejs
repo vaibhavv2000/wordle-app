@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <script src="./js/tailwind.js" defer></script>
+</head>
+
+<body class="font-inter overflow-x-hidden">
+  <nav class="shadow-sm">
+    <nav class="flex items-center sticky top-0 bg-white z-10 justify-between lg:px-5 py-2 md:px-5  shadow-sm px-5 mx-auto max-w-[1240px] h-20">
+        <div class="flex items-center space-x-5">
+          <h1 class="text-2xl font-bold text-primary">DevTeam.space</h1>
+          <ul class="nav-list">
+            <li class="nav-link ml-3">WHY US?</li>
+            <li class="nav-link exp-toggle -pl-2">
+              EXPERTISE
+              <i class="fa-solid fa-caret-down text-slate-700 text-xs hover:text-primary"></i>
+            </li>
+            <ul class="bg-transparent lg:bg-white lg:shadow-md lg:absolute top-10 left-72 py-3 lg:w-[300px]">
+              <li class="nav-exp-link">Blockchain</li>
+              <li class="nav-exp-link">Web</li>
+              <li class="nav-exp-link">Node JS</li>
+              <li class="nav-exp-link">React JS</li>
+              <li class="nav-exp-link">Android</li>
+            </ul>
+            <li class="nav-link -ml-2">CLIENTS</li>
+            <li class="nav-link">ABOUT</li>
+            <li class="nav-link">BLOG</li>
+          </ul>
+        </div>
+        <div class="flex items-center space-x-3">
+          <button class="font-semibold text-[15.5px] text-slate-500 px-4 py-2 hover:text-primary hidden md:!block tracking-wide">
+            SIGN IN
+          </button>
+          <button class="hidden sm:!block font-semibold text-primary border-2 border-primary py-2 px-4 text-[15px] hover:bg-primary hover:text-white transition-all duration-300">
+            GET STARTED
+          </button>
+          <i class="fa-solid fa-bars-staggered lg:hidden cursor-pointer z-[999999] nav-toggle" id="toggler"></i>
+        </div>
+      </nav>
+  </nav>
+
+  <!-- Intro -->
+
+  <div class="flex lg:flex-row flex-col space-y-10 py-10 lg:py-0 mx-auto max-w-[1240px]">
+    <div class="flex-1 mx-auto w-[95%] sm:w-[80%] lg:w-full lg:p-10 lg:pt-20">
+      <h1 class="text-3xl md:text-5xl text-gray-600 font-sans_pro">
+        Hire Expert Developers,<br /> Not Freelancers
+      </h1>
+      <p class="sm:text-xl text-[16px] lg:text-[22px] text-slate-600 my-7 font-extralight">
+        DevTeam.Space is a vetted community of expert development teams supported by an AI-powered agile process.Companies like Disney, Airbus, NEC, and startups rely on us to build great online products. We can help you too, by enabling you to hire and effortlessly manage expert developers.
+      </p>
+      <button class="bg-primary text-lg text-white font-light font-monospace py-2 px-5 font-sans border-2 border-primary hover:bg-white hover:text-primary transition-all duration-700">
+        HIRE EXPERT DEVELOPERS >
+      </button>
+    </div>
+    <div class="flex-1 flex lg:items-center xl:items-start mx-4 justify-center h-[calc(100vh-70px)] lg:h-[400px]">
+      <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/img-banner-image-new.png" alt="" class="scale-100" />
+    </div>
+  </div>
+
+    <!-- Team -->
+
+  <div class="grid lg:flex gap-5 lg:gap-0 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 sm:items-center lg:grid-cols-4 w-full sm:w-[90%] md:w-[80%] lg:w-[90%] mx-auto lg:justify-center lg:space-x-8 mt-12">
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2019/09/steve-192x192.jpg" 
+        alt=""
+        class="w-full" />
+      </div>
+      <div class="p-2 flex flex-col space-y-1">
+        <span class="text-sm text-gray-800">Steve</span>
+        <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+      </div>
+    </div>
+
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2019/08/max-192x192.jpg" alt="" class="w-full" />
+      </div>
+      <div class="p-2 flex flex-col space-y-1">
+        <span class="text-sm text-gray-800">Steve</span>
+        <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+      </div>
+    </div>
+        
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2019/09/arvid-192x192.jpg" 
+        alt=""
+        class="w-full" />
+      </div>
+      <div class="p-2 flex flex-col space-y-1">
+        <span class="text-sm text-gray-800">Steve</span>
+        <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+      </div>
+    </div>
+
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2019/08/john-192x192.jpg" 
+        alt=""
+        class="w-full" />
+      </div>
+      <div class="p-2 flex flex-col space-y-1">
+        <span class="text-sm text-gray-800">Steve</span>
+        <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+      </div>
+    </div>
+
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2020/02/alexandr-192x192.jpg" 
+        alt=""
+        class="w-full" />
+      </div>
+      <div class="p-2 flex flex-col space-y-1">
+        <span class="text-sm text-gray-800">Steve</span>
+        <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+      </div>
+    </div>
+
+    <div class="shadow-sm w-48 lg:w-[185px]">
+      <div class="relative">
+        <img src="https://www.devteam.space/wp-content/uploads/2020/02/yana-192x192.jpg" 
+        alt=""
+        class="w-full" />
+      </div>
+        <div class="p-2 flex flex-col space-y-1">
+          <span class="text-sm text-gray-800">Steve</span>
+          <p class="text-gray-400 text-sm">PHP &bull; WordPress</p>
+        </div>
+    </div>
+  </div>
+
+    <!--  -->
+
+    <div class="flex flex-col my-12 justify-center space-y-5 items-center">
+        <h1 class="font-sans text-4xl text-center font-medium">Leverage Expert Developers</h1>
+        <p class="font-sans_pro font-light text-[21px] text-gray-900 flex flex-col px-4">
+            <span class="text-center max-w-md">We're a vetted community of expert development teams, ready to help you with your important software projects.</span>
+        </p>
+    </div>
+
+    <!--  -->
+    <div class="bg-gray-50">
+      <div class="flex flex-col md:flex-row py-10 justify-evenly lg:px-16 bg-gray-50 mx-auto max-w-[1240px]">
+        <div class="flex flex-col space-y-3 p-10 shadow m-2 bg-white">
+          <img src="./images/dev1.png" alt="" class="h-24 w-24 object-cover" />
+            <h4 class="font-roboto text-lg text-gray-500">Hire Expert Developers, <br />
+              Not Freelancers
+            </h4>
+            <p class="text-gray-600 text-[16px] font-light">
+                Building a great product in today's world requires expert developers, not freelancers. DevTeam.Space is a vetted community where you can hire expert developers for all of your software development needs.
+            </p>
+        </div>
+    
+        <div class="flex flex-col space-y-3 p-10 shadow m-2 bg-white">
+          <img src="./images/dev2.png" alt="" class="h-24 w-24 object-cover" />
+            <h4 class="font-roboto text-lg text-gray-500">
+              10x Better Communication, <br />
+              Tasks and Payments Management
+            </h4>
+          <p class="text-gray-600 text-[16px] font-light">
+            Our AI-powered agile process streamlines the product development process and provides you with all the tools, notifications, and performance tracking that you need to ensure your project's ongoing success.
+          </p>
+        </div>
+    
+        <div class="flex flex-col space-y-3 p-10 shadow m-2 bg-white">
+          <img src="./images/dev3.png" alt="" class="h-24 w-24 object-cover" />
+          <h4 class="font-roboto text-lg text-gray-500">Start Small - <br />
+            Scale with Ease
+          </h4>
+          <p class="text-gray-600 text-[16px] font-light">
+            Start as small as hiring one developer to try our service. Once you're satisfied with our exceptional quality and communication, you can easily scale your development team with more engineers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="flex flex-col md:flex-row items-center md:justify-around my-8 space-y-10 max-w-[1240px] mx-auto">
+        <div class="flex flex-col space-y-5 md:space-y-3 items-center md:items-start md:mt-11">
+            <span class="text-secondary text-6xl font-thin font-sans_pro">62</span>
+            <p class="font-sans text-[18px] text-gray-800 font-light text-center md:text-left">Expert dev teams, <br />
+                1 200 top developers</p>
+        </div>
+        <div class="flex flex-col space-y-5 md:space-y-3 items-center md:items-start">
+            <span class="text-secondary text-6xl font-thin font-sans_pro">300+</span>
+            <p class="font-sans text-[18px] text-gray-800 font-light text-center md:text-left"> Businesses trusted us
+                <br />
+                since 2016
+            </p>
+        </div>
+        <div class="flex flex-col space-y-5 md:space-y-3 items-center md:items-start">
+            <span class="text-secondary text-6xl font-thin font-sans_pro">ONE</span>
+            <p class="font-sans text-[18px] text-gray-800 font-light text-center md:text-left">Unique AI-powered agile
+                <br />
+                process to guide you to success
+            </p>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="my-10 mt-16 px-10 flex flex-col space-y-7">
+        <h3 class="text-4xl font-sans font-medium text-slate-700 text-center">Trusted by Hundreds of Businesses Across the World</h3>
+        <div class="flex justify-center items-center flex-wrap space-x-4 max-w-[700px] mx-auto">
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/samsung.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/carvana-1.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/airbus.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/poynt.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/adventure-aide.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/nec.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/startups-from.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/y-combinator.svg" alt="" class="m-4" />
+            <img src="https://www.devteam.space/wp-content/uploads/2019/08/500-startups.svg" alt="" class="m-4" />
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="flex flex-col w-[95%] sm:w-[95%] md:w-[80%] lg:w-full lg:flex-row lg:px-10 py-10 mx-auto max-w-[1240px]">
+        <div class="flex-1">
+          <img src="https://www.devteam.space/wp-content/uploads/2019/07/img@2x-2-2.jpg" 
+            alt=""
+            class="h-full w-full" 
+          />
+        </div>
+        <div class="flex-1 p-4 px-6 shadow-md">
+          <h3 class="font-sans_pro text-[24px] font-medium text-black/80">
+            Face, Sex, Age, Video Emotion Recognition System For Nec
+          </h3>
+            <p class="font-sans text-black/70 text-sm my-2">
+                Our machine learning dev team developed a complex of video analytics in order to achieve accurate
+                identification of people based on facial recognition and the following parameters: sex, age, and five
+                types of emotions.
+            </p>
+            <div class="my-4">
+                <h4 class="font-inter text-lg text-black/90 mb-1">Dev Team</h4>
+                <span class="text-[18px] text-slate-600 font-light">4 Developers</span>
+            </div>
+            <div class="my-5 text-xl font-roboto text-slate-600">
+                1 Project Manager, 1 Account Manager
+            </div>
+            <div class="my-4">
+                <h4 class="font-inter text-lg text-black/90">Tech Stack</h4>
+                <span class="text-[14px] text-slate-500">React JS</span>
+            </div>
+            <div class="my-4">
+                <h4 class="font-inter text-lg text-black/90">Industry Tags</h4>
+                <span class="text-[14px] text-slate-500">
+                    Image recognition &bull; Machine &bull; learning Security
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="mx-auto max-w-[1240px]">
+      <div class="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:justify-between items-center px-5 lg:px-7 py-8 mx-3 md:mx-10 my-3 border">
+        <h1 class="text-[28px] md:text-3xl text-secondary font-sans_pro">
+          Ready to get started?
+        </h1>
+        <div class="flex items-center md:space-x-4 flex-col md:flex-row space-y-3 md:space-y-0">
+          <button class="py-2 px-4 bg-secondary hover:bg-white border-2 border-secondary text-white hover:text-secondary font-medium xs:w-[300px] sm:w-[330px] md:w-[max-content]">
+            HIRE DEVS
+          </button>
+          <button class="py-2 px-4 hover:bg-secondary border-2 border-secondary text-secondary hover:text-white font-medium xs:w-[300px] sm:w-[330px] md:w-[max-content]">
+            MORE PROJECTS
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="mx-auto max-w-[1240px]">
+        <h1 class="font-sans text-4xl text-center font-medium text-black/80 my-10">
+            How DevTeam.Space Works
+        </h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-5 lg:px-10 md:gap-14 gap-10">
+
+            <div class="shadow flex w-[80%] flex-col lg:flex-col sm:flex-row mx-auto sm:w-[90%] md:w-[80%] lg:w-full">
+                <div class="relative sm:w-[140%] md:w-[80%] lg:w-full">
+                    <img src="https://www.devteam.space/wp-content/uploads/2019/08/01-e1678229362749.jpg" alt=""
+                        class="sm:h-full " />
+
+                    <div
+                        class="bg-secondary text-white h-10 w-10 grid place-items-center font-sans_pro text-lg absolute bottom-0 left-0">
+                        1</div>
+                </div>
+                <div
+                    class="p-5 flex flex-col space-y-3 md:items-center lg:items-start md:justify-center lg:justify-start">
+                    <p class="text-[17.5px] text-black/70 font-sans">
+                        Tell Us About Your Project or Hiring Needs
+                    </p>
+                    <span class="text-sm text-black font-sans font-light">
+                        Submit a request. Your dedicated tech account manager will then contact you to assess your needs
+                        in detail and answer any questions.
+                    </span>
+                </div>
+            </div>
+
+            <div class="shadow flex w-[80%] flex-col lg:flex-col sm:flex-row mx-auto sm:w-[90%] md:w-[80%] lg:w-full">
+                <div class="relative sm:w-[140%] md:w-[80%] lg:w-full">
+                    <img src="https://www.devteam.space/wp-content/uploads/2019/08/03-e1678229417842.jpg" alt=""
+                        class="sm:h-full " />
+
+                    <div
+                        class="bg-secondary text-white h-10 w-10 grid place-items-center font-sans_pro text-lg absolute bottom-0 left-0">
+                        2</div>
+                </div>
+                <div
+                    class="p-5 flex flex-col space-y-3 md:items-center lg:items-start md:justify-center lg:justify-start">
+                    <p class="text-[17.5px] text-black/70 font-sans">
+                        Hire Top Developers With Relevant Expertise
+                    </p>
+                    <span class="text-sm text-black font-sans font-light">
+                        Developers with the relevant expertise will be assigned to your project. Once approved, we set
+                        up the process and get started.
+                    </span>
+                </div>
+            </div>
+
+            <div class="shadow flex w-[80%] flex-col lg:flex-col sm:flex-row mx-auto sm:w-[90%] md:w-[80%] lg:w-full">
+                <div class="relative sm:w-[140%] md:w-[80%] lg:w-full">
+                    <img src="https://www.devteam.space/wp-content/uploads/2019/08/02-e1678229470907.jpg" alt=""
+                        class="sm:h-full " />
+
+                    <div
+                        class="bg-secondary text-white h-10 w-10 grid place-items-center font-sans_pro text-lg absolute bottom-0 left-0">
+                        3</div>
+                </div>
+                <div
+                    class="p-5 flex flex-col space-y-3 md:items-center lg:items-start md:justify-center lg:justify-start">
+                    <p class="text-[17.5px] text-black/70 font-sans">
+                        Stay on Top With Our AI-Powered Agile Process
+                    </p>
+                    <span class="text-sm text-black font-sans font-light">
+                        Our AI-powered agile process helps you track developers’ performance, streamline communication,
+                        payments, and receive regular updates.
+                    </span>
+                </div>
+            </div>
+
+            <div class="shadow flex w-[80%] flex-col lg:flex-col sm:flex-row mx-auto sm:w-[90%] md:w-[80%] lg:w-full">
+                <div class="relative sm:w-[140%] md:w-[80%] lg:w-full">
+                    <img src="https://www.devteam.space/wp-content/uploads/2019/08/04-e1678229447942.jpg" alt=""
+                        class="sm:h-full " />
+
+                    <div
+                        class="bg-secondary text-white h-10 w-10 grid place-items-center font-sans_pro text-lg absolute bottom-0 left-0">
+                        4</div>
+                </div>
+                <div
+                    class="p-5 flex flex-col space-y-3 md:items-center lg:items-start md:justify-center lg:justify-start">
+                    <p class="text-[17.5px] text-black/70 font-sans">
+                        Scale Your Product With DevTeam.Space
+                    </p>
+                    <span class="text-sm text-black font-sans font-light">
+                        Once satisfied with our exceptional quality and dedication, you can easily hire more developers
+                        to scale your project.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="bg-[#FCFCFC]">
+        <div class="my-10 py-10 bg-[#FCFCFC] mx-auto max-w-[1240px]">
+            <h1 class="text-center text-4xl font-sans_pro font-medium max-w-2xl mx-auto my-10">
+                Easily Hire and Manage Expert Developers Most Suited for Your Project
+            </h1>
+            <div class="flex flex-col lg:flex-row space-y-5">
+                <div
+                    class="left lg:w-[70%] flex sm:flex-row lg:flex-col lg:px-10 justify-center space-x-1 flex-col space-y-3 lg:space-y-0 items-center">
+    
+                    <div class="relative bg-white border flex flex-col items-center justify-center h-64 sm:w-44 w-56">
+                        <a href="#" class="text-[11px] text-secondary hover:underline">SUB-PROJECT FOR</a>
+                        <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/logos/poynt.svg"
+                            alt="" />
+                        <div class="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGcgNroIe6iFvEhiC6EfkuSGbus_-n_8qgg&usqp=CAU"
+                                alt="" class="absolute bottom-0 left-0 w-full h-16 object-cover"
+                                style="clip-path: polygon(100% 18%, 0% 100%, 100% 100%);" />
+                        </div>
+                    </div>
+                    <div
+                        class="relative bg-white border flex flex-col items-center justify-center h-64 sm:w-44 w-56 md:scale-110 lg:scale-100 lg:self-end">
+                        <a href="#" class="text-[11px] text-secondary hover:underline">
+                            PRODUCT OPTIMIZATION FOR
+                        </a>
+                        <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/logos/class-central-2.svg"
+                            alt="" />
+                        <div class="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGcgNroIe6iFvEhiC6EfkuSGbus_-n_8qgg&usqp=CAU"
+                                alt="" class="absolute bottom-0 left-0 w-full h-16 object-cover"
+                                style="clip-path: polygon(100% 18%, 0% 100%, 100% 100%);" />
+                        </div>
+                    </div>
+                    <div class="relative bg-white border flex flex-col items-center justify-center h-64 sm:w-44 w-56">
+                        <a href="#" class="text-[11px] text-secondary hover:underline">
+                            AUTOMATION FOR
+                        </a>
+                        <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/logos/carvana.svg"
+                            alt="" />
+                        <div class="">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGcgNroIe6iFvEhiC6EfkuSGbus_-n_8qgg&usqp=CAU"
+                                alt="" class="absolute bottom-0 left-0 w-full h-16 object-cover"
+                                style="clip-path: polygon(100% 18%, 0% 100%, 100% 100%);" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right grid grid-cols-1 lg:grid-cols-2 gap-10 px-3 sm:px-10">
+                    <div class="bg-white border p-5">
+                        <img src="./images/pro1.png" alt="" />
+                        <h2 class="text-xl font-roboto mb-3">Product Scaling</h2>
+                        <div class="text-black/80 text-[15px] space-y-3 font-light">
+                            <div class="">
+                                Do you have an MVP and need a pro-level dev team to scale it?
+                            </div>
+                            <br />
+                            <div>
+                                We can help you by allocating a dedicated team of developers and project managers to take
+                                your product to the next level and scale.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white border p-5">
+                        <img src="./images/pro2.png" alt="" />
+                        <h2 class="text-xl font-roboto mb-3">Enterprise Solutions</h2>
+                        <div class="text-black/80 text-[15px] space-y-3 font-light">
+                            <div class="">
+                                Ready to innovate?
+                            </div>
+                            <br />
+                            <div>
+                                We can help you with processes automation, data-engineering solutions, spin-off products,
+                                and more.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white border p-5">
+                        <img src="./images/pro3.png" alt="" />
+                        <h2 class="text-xl font-roboto mb-3">Product Prototyping</h2>
+                        <div class="text-black/80 text-[15px] space-y-3 font-light">
+                            <div class="">
+                                Not ready to invest in product development due to a lack of market research or funding?
+                            </div>
+                            <br />
+                            <div>
+                                We can help you by developing a product prototype for market validation and fundraising.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white border p-5">
+                        <img src="./images/pro4.png" alt="" />
+                        <h2 class="text-xl font-roboto mb-3">MVP</h2>
+                        <div class="text-black/80 text-[15px] space-y-3 font-light">
+                            <div class="">
+                                <i>Ready to build a product and hit the market?</i>
+                            </div>
+                            <br />
+                            <div>
+                                We can help you design and build a complete minimum viable product (MVP) for Web and Mobile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="my-10 mx-auto max-w-[1240px]">
+        <div class="flex flex-col space-y-2 items-center justify-center">
+            <h1 class="font-sans text-center text-xl md:text-3xl font-medium">Recommended by 97% of Our Customers</h1>
+            <img src="./images/customers.png" alt="">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5 lg:px-16 px-3 md:px-8 pt-10 pb-7">
+            <div class="border flex flex-col space-y-5 p-4">
+                <h1 class="text-xl font-sans font-medium">Right provider for complex projects</h1>
+                <p class="pb-7 pt-4">
+                    <i class="fa fa-quote-left text-4xl -mt-5 text-slate-200" aria-hidden="true"></i>
+                    <span class="font-sans_pro text-[20px] font-light text-gray-900 italic">DevTeam.Space built a custom
+                        web portal for a hedge fund. They handled a complex development project, remaining organized and
+                        professional throughout. They’re accessible and tackle any challenge. Customers can expect a
+                        quick and skilled development team.</span>
+                </p>
+                <div class="flex items-center space-x-4">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" class="h-14 w-14 object-cover" />
+                    <div class="flex flex-col justify-around">
+                        <h2 class="font-roboto">Bryan Cutter</h2>
+                        <span class="text-sm text-gray-500 font-light">CIO, Hedge Fund Company</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border flex flex-col space-y-5 p-4">
+                <h1 class="text-xl font-sans font-medium">
+                    DevTeam.Space rocks
+                </h1>
+                <p class="pb-7 pt-4">
+                    <i class="fa fa-quote-left text-4xl -mt-5 text-slate-200" aria-hidden="true"></i>
+                    <span class="font-sans_pro text-[20px] font-light text-gray-900 italic"> We needed a new long-term
+                        product development partner to identify the issues, and ideally, take over the entire product.
+                        The performance of our shipping platform increased dramatically since DevTeam.Space stepped in.
+                        We plan to continue working with them on a long term basis.</span>
+                </p>
+                <div class="flex items-center space-x-4">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" class="h-14 w-14 object-cover" />
+                    <div class="flex flex-col justify-around">
+                        <h2 class="font-roboto">Richard Chilton</h2>
+                        <span class="text-sm text-gray-500 font-light">
+                            Owner, Island Bargains
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border flex flex-col space-y-5 p-4">
+                <h1 class="text-xl font-sans font-medium">
+                    Talented, responsive and reasonable!
+                </h1>
+                <p class="pb-7 pt-4">
+                    <i class="fa fa-quote-left text-4xl -mt-5 text-slate-200" aria-hidden="true"></i>
+                    <span class="font-sans_pro text-[20px] font-light text-gray-900 italic">We manage the IT for an
+                        almost 100 year old international Not-For-Profit Foundation. Between our inhouse team and
+                        DevTeam.Space we made our deadline, and have received overwhelmingly positive feedback from the
+                        end-users and management.</span>
+                </p>
+                <div class="flex items-center space-x-4">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" class="h-14 w-14 object-cover" />
+                    <div class="flex flex-col justify-around">
+                        <h2 class="font-roboto">Alex</h2>
+                        <span class="text-sm text-gray-500 font-light">
+                            IT Director, Non-profit Organization
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="#" class="text-secondary sm:text-[23px] hover:underline font-mono">SHOW MORE TESTIMONIALS</a>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div>
+        <h1 class="font-sans text-3xl text-center font-medium">As Seen On</h1>
+        <div class="flex justify-center">
+            <img src="./images/publish.png" alt="">
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="bg-gray-50">
+        <div class="flex lg:flex-row flex-col space-y-10 py-10 lg:py-20 bg-gray-50 mx-auto max-w-[1240px]">
+            <div class="flex-1 mx-auto w-[95%] sm:w-[80%] lg:w-full lg:p-10 lg:pt-20">
+                <h1 class="text-3xl md:text-5xl text-gray-600 font-sans mb-8">
+                    Tell Us About Your <br /> Challenge & Get a Free <br /> Strategy Session
+                </h1>
+                <button
+                    class="bg-primary text-lg text-white font-light font-monospace py-2 px-5 font-sans border-2 border-primary hover:bg-white hover:text-primary transition-all duration-700">
+                    HIRE EXPERT DEVELOPERS >
+                </button>
+            </div>
+            <div class="flex-1 flex lg:items-center justify-center">
+                <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/img-banner-image-new.png"
+                    alt="" class="scale-100" />
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="bg-[#014AAC]">
+        <footer class="bg-[#014AAC] text-white font-sans pt-20 pb-32 grid gap-10 lg:grid-cols-5 md:grid-cols-4 grid-cols-1 md:px-2 mx-auto max-w-[1240px]">
+            <ul class="text-sm space-y-3 flex flex-col items-center">
+              <h4 class="font-semibold text-[17px] my-2">Hire Developers</h4>
+              <li>Hire Data Engineers</li>
+              <li>Hire Mobile Devs</li>
+              <li>Hire React Developers</li>
+              <li>Hire PHP Developers</li>
+              <li>Hire Java Developers</li>
+            </ul>
+            <ul class="text-sm space-y-3 flex flex-col items-center">
+                  <h4 class="font-semibold text-[17px] my-2">About Us</h4>
+                  <li>Our Top Developers</li>
+                  <li>How It Works?</li>
+                  <li>STEM Scholarship</li>
+                  <li>Terms of Use</li>
+                  <li>Privacy Policy</li>
+              </ul>
+      
+              <ul class="text-sm space-y-3 flex flex-col items-center">
+                  <h4 class="font-semibold text-[17px] my-1.5">Informative</h4>
+                  <li>Blog</li>
+                  <li>FAQ</li>
+                  <li>Hiring Interview Tips</li>
+      
+                  <h4 class="font-semibold text-[17px] my-3 mb-2">Independent Reviews</h4>
+                  <div class="-mt-5">
+                      <li class="flex items-center my-4">
+                          <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/clutch_icon.svg"
+                              alt="" class="h-7 w-7 self-start" />
+                          <p class="ml-3">Clutch</p>
+                      </li>
+                      <li class="flex items-center my-4">
+                          <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/trustpilot.svg" alt=""
+                              class="h-7 w-7" />
+                          <p class="ml-3">Trustpilot</p>
+                      </li>
+                      <li class="flex items-center my-4">
+                          <img src="https://www.devteam.space/wp-content/themes/devteamspace/assets/img/good_firms_icon.svg"
+                              alt="" class="h-7 w-7" />
+                          <p class="ml-3">Good Firms</p>
+                      </li>
+                  </div>
+              </ul>
+      
+              <ul class="text-sm space-y-3 flex flex-col items-center">
+                  <h4 class="font-semibold text-[17px] my-1.5">Contact Us</h4>
+                  <li>+1 415 570 66363</li>
+                  <li>mail@devteam.space</li>
+              </ul>
+      
+              <ul class="text-sm space-y-3 flex flex-col items-center mx-3">
+                  <h4 class="font-semibold text-[17px] my-1.5">Subscribe</h4>
+                  <li>10,000+ members</li>
+                  <li class="text-center">Receive the latest tech <br /> announcements and tutorials
+                  </li>
+                  <li class="flex items-center justify-center px-3 cursor-none mx-3">
+                      <input placeholder="Email" class="border-none outline-none p-2 text-black w-[160px]" />
+                      <button class="grid items-center bg-blue-500 h-9 w-9">
+                          <i class="fa-solid fa-chevron-right"></i>
+                      </button>
+                  </li>
+              </ul>
+          </footer>
+    </div>
+
+</body>
+
+</html>
